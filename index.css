@@ -31,3 +31,13 @@ h1 {
     color: #498b6d;
     text-align: center;
 }
+
+.card {
+    width: 1200px;
+    height: 335px;
+    align-self: center;
+    margin: 35px;
+}
+
+
+
