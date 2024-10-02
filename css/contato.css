@@ -7,7 +7,7 @@
 }
 
 header {
-    background: #5167b2;
+    background: #ffffff;
 }
 
 .headerBtnGroup {
@@ -57,7 +57,7 @@ a {
     border-radius: 25px;
     border-style: solid;
     border-width: 1px;
-    border-color: #6679bd;
+    border-color: #498b6d;
 }
 
 .container .title {
@@ -81,7 +81,7 @@ form .campos .input-box {
     box-shadow: 2px 2px 2px rgb(196, 196, 196);
     border: none;
     border-radius: 5px;
-    background-color: #bed4f9;
+    background-color: #f0f0f0;
 
 }
 
@@ -104,7 +104,7 @@ input::placeholder {
     box-shadow: 2px 2px 2px rgb(196, 196, 196);
     border: none;
     border-radius: 5px;
-    background-color: #bed4f9;
+    background-color: #f0f0f0;
 }
 
 form .button {
@@ -121,14 +121,14 @@ form .button button {
     font-size: large;
     outline: none;
     color: #ffff;
-    background: #6679bd;
+    background: #498b6d;
     letter-spacing: 2px;
     font-weight: 500;
     cursor: pointer;
 }
 
 form .button button:hover {
-    background-color: #86a0cc;
+    background-color: #59987c;
 }
 
 .contacts {
@@ -140,7 +140,7 @@ form .button button:hover {
     border-radius: 25px;
     border-style: solid;
     border-width: 1px;
-    border-color: #6679bd;
+    border-color: #498b6d;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
