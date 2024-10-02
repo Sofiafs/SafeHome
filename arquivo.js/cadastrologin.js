@@ -9,3 +9,50 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+
+
+let email = document.getElementById("Email");
+let Senha = document.querySelector("Senha");
+
+
+let text = document.getElementById("Nome");
+let email2 = document.querySelector("E-mail");
+let password = document.getElementById("Senha")
+
+if (email) {
+    email.addEventListener("input", () => {
+      const usuario = email.value;
+      if (usuario.length >= 3) {
+        email.classList.remove("error");
+        email.classList.add("correct");
+
+  
+      } else if (usuario.length === 0) {
+        email.classList.remove("correct");
+        email.classList.remove("error");
+
+      } else {
+        email.classList.remove("correct");
+        email.classList.add("error");
+
+      }
+    });
+  }
+  
+  Senha.addEventListener("input", () => {
+    const Senha = Senha.value;
+    if (usuario.length >= 5) {
+      Senha.classList.remove("error");
+      Senha.classList.add("correct");
+
+
+    } else if (usuario.length === 0) {
+      Senha.classList.remove("correct");
+      Senha.classList.remove("error");
+
+    } else {
+      Senha.classList.remove("correct");
+      Senha.classList.add("error");
+
+    }
+  });
