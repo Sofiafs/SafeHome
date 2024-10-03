@@ -11,13 +11,9 @@ loginBtn.addEventListener('click', () => {
 });
 
 
-let email = document.getElementById("Email");
-let Senha = document.querySelector("Senha");
-
-
-let text = document.getElementById("Nome");
-let email2 = document.querySelector("E-mail");
-let password = document.getElementById("Senha")
+let nome = document.getElementById("Nome");
+let email = document.querySelector("E-mail");
+let Senha = document.getElementById("Senha")
 
 if (email) {
     email.addEventListener("input", () => {
