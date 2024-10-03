@@ -2,20 +2,23 @@ CREATE DATABASE IF NOT EXISTS cadastro_login;
 
 USE cadastro_login;
 
--- Cadastro
+-- Tabela de Cadastro 
 CREATE TABLE IF NOT EXISTS Cadastro (
-    email VARCHAR(100) NOT NULL,
-    senha VARCHAR(25) NOT NULL,
-    nome VARCHAR(80) NOT NULL,
-    PRIMARY KEY (email, senha)
+    id_usuario INT AUTO_INCREMENT,     
+    nome VARCHAR(255) NOT NULL,        
+    email VARCHAR(255) NOT NULL UNIQUE, 
+    senha VARCHAR(255) NOT NULL,      
+    PRIMARY KEY (id_usuario) 
+             
+-- Tabela de Login 
+CREATE TABLE IF NOT EXISTS Login (
+    id_login INT AUTO_INCREMENT,      
+    email VARCHAR(255) NOT NULL,       
+    senha VARCHAR(255) NOT NULL,      
+    login_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
+    PRIMARY KEY (id_login),            
+    FOREIGN KEY (email) REFERENCES Cadastro(email) 
 );
 
---Login
-CREATE TABLE IF NOT EXISTS Login (
-    email VARCHAR(100) NOT NULL,
-    senha VARCHAR(25) NOT NULL,
-    login_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (email, senha) REFERENCES Cadastro(email, senha)
-);
 
 
